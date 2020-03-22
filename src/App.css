@@ -1,0 +1,247 @@
+.App {
+    position: relative;
+    height: 2596px;
+}
+
+/*Header*/
+.Header {
+    position: absolute;
+    width: 1360px;
+    height: 130px;
+    background-color: #ffffff;
+}
+
+/*search*/
+* {
+    box-sizing: border-box;
+}
+
+form {
+    top: 67px;
+    left: 887px;
+    position: absolute;
+    width: 300px;
+    margin: 0 auto;
+    height: 42px;
+}
+
+input {
+    height: 41px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+input:focus {
+    width: 314px;
+    z-index: 1;
+    border-bottom: 2px solid #F9F0DA;
+}
+
+.first {
+
+    background-image: url("./Components/png/search.png");
+    border: none;
+    height: 18px;
+    width: 17.38px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.first:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+.logo {
+    position: absolute;
+    width: 123px;
+    height: 90px;
+    left: 90px;
+    top: 5px;
+    background-image: url("./Components/png/Logo.png");
+}
+
+.nav > ul {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    left: 362px;
+}
+
+.nav > ul li a {
+    display: block;
+    background: #ffffff;
+    padding: 45px 30px 20px 40px;
+    text-decoration: none;
+}
+
+.nav > ul li {
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+a:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #ec973b;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ec9e3f;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+a:hover:before {
+    width: 50%;
+    left: 0;
+}
+
+a:hover:after {
+    width: 50%;
+}
+
+/*Flags*/
+
+.flags>ul{
+    list-style: none;
+}
+
+
+
+.flags{
+    position: absolute;
+    left: 1212px;
+    top: 50px;
+    display: inline-block;
+}
+
+
+.flag{
+    position: absolute;
+}
+
+.flag1 {
+    background-image: url("./Components/png/Russia.png");
+    width: 31px;
+    height: 21px;
+}
+
+.flag2 {
+    background-image: url("./Components/png/Ukraine.png");
+    width: 31px;
+    height: 21px;
+}
+
+.flag3 {
+    background-image: url("./Components/png/Kingdom.png");
+    width: 31px;
+    height: 21px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+.flag {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.flag a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.flag a:hover {background-color: #ddd;}
+
+.flags:hover .flag {display: block;}
+
+.flags:hover .dropbtn {background-color: #3e8e41;}
+
+/*Site*/
+
+.Slider {
+    margin-top: 106px;
+    position: absolute;
+    width: 1360px;
+    height: 448px;
+    background-image: url("./Components/png/Slider.png");
+}
+
+
+
+.Services {
+    position: absolute;
+    margin-top: 584px;
+    width: 1180px;
+    height: 727px;
+    left: 90px;
+    background-image: url("./Components/png/services.png");
+}
+
+.fast {
+    position: absolute;
+    width: 379px;
+    height: 43px;
+    left: 490px;
+    top: 1331px;
+}
+
+.our {
+    position: absolute;
+    width: 1360px;
+    height: 380px;
+    left: 0px;
+    top: 1506px;
+}
+
+.footer {
+    position: absolute;
+    width: 1360px;
+    height: 300px;
+    left: 0px;
+    top: 2296px;
+}
